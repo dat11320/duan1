@@ -39,6 +39,8 @@
    // git add . chon file tai len
 // git commit -m "" de ghi mo ta
 // git push gui file len
+// thử 
+// git pull
 
    include "view/footer.php";
    // echo "# duan1" >> README.md
