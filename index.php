@@ -38,6 +38,7 @@
    }
    // git add . chon file tai len
 // git push gui file len
+// git pull
    include "view/footer.php";
    // echo "# duan1" >> README.md
    // git init
