@@ -37,7 +37,7 @@
       include "view/main.php";
    }
    // git add . chon file tai len
-
+// git commit -m "" de ghi mo ta
    include "view/footer.php";
    // echo "# duan1" >> README.md
    // git init
