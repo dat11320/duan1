@@ -59,7 +59,7 @@
                         <a href="#">Bánh ngọt & Bánh mì</a>
                     </li>
                     <li>
-                        <a href="#">Liên hệ</a>
+                        <a href="index.php?pg=lienhe">Liên hệ</a>
                     </li>
                     <li>
                         <a href="#">Hệ thống cửa hàng</a>

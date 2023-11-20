@@ -1,7 +1,7 @@
 <?php
    session_start();
    include "model/pdo.php";
-//    include "model/user.php";
+   include "model/user.php";
    include "view/header.php";
    if(isset($_GET['pg'])){
       $pg=$_GET['pg'];
@@ -39,8 +39,9 @@
    // git add . chon file tai len
 // git commit -m "" de ghi mo ta
 // git push gui file len
-// thử 
-// git pull
+// tess lại
+// git pull vcxvxcvxcv
+/// sửa lại thử 
 
    include "view/footer.php";
    // echo "# duan1" >> README.md
