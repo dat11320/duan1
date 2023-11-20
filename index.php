@@ -1,34 +1,41 @@
 <?php
    session_start();
    include "model/pdo.php";
-   include "model/user.php";
+   // include "model/user.php";
    include "view/header.php";
    if(isset($_GET['pg'])){
       $pg=$_GET['pg'];
       switch ($pg) {
+         case 'dangxuat':
+            unset($_SESSION['user']);  // hủy bỏ biến session
+            header('location: index.php'); 
+            break;
          case 'dangnhap':
             if((isset($_POST['btnlogin']))&&($_POST['btnlogin'])){
                // input?
-               $user=$_POST['user'];
+               $user=$_POST['user']; // name bên form
                $pass=$_POST['pass'];
-               // xl?
-               $isuser=checkuser($user,$pass);
-               $_SESSION['user']=$isuser;
-               // return
-               header('location: index.php');
+               // sử lí?
+               $arruser=array($user,$pass);
+               $_SESSION['user']=$arruser;
+               // trả về 
+               header('location: index.php'); 
             }
             include "view/login.php";
             break;
-         case 'logout':
-            if(isset($_SESSION['user'])&&($_SESSION['user']!="")){
-               unset($_SESSION['user']);
-               header('location: index.php');
-            }
+         // case 'thoat':
+         //    if(isset($_SESSION['user'])&&($_SESSION['user']!="")){
+         //       unset($_SESSION['user']);
+         //       header('location: index.php');
+         //    }
             break;
+         
          case 'userupdate':
             include "view/userupdate.php";
             break;
-         
+         case 'lienhe':
+            include "view/lienhe.php";
+            break;
          default:
             include "view/main.php";
             break;

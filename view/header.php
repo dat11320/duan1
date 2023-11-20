@@ -30,8 +30,8 @@
                     <li>
                         <?php
                             if (isset($_SESSION['user'])) {
-                                echo ' <a href="index.php?pg=updateinfo"><i class="fa-solid fa-user"></i>'.$_SESSION['user'][0].'</a>';
-                                echo ' <a href="index.php?pg=thoat"><i class="fa-solid fa-user"></i>Thoát</a>';
+                                echo ' <a href="index.php?pg=userupdate"><i class="fa-solid fa-user"></i>'.$_SESSION['user'][0].'</a>';
+                                echo ' <a href="index.php?pg=dangxuat"></i>Đăng xuất</a>';
                                 
                             }else{
                                 echo ' <a href="index.php?pg=dangnhap"><i class="fa-solid fa-user"></i>Đăng nhâp / Đăng kí</a>';

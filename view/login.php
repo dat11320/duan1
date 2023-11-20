@@ -46,12 +46,12 @@
     </style>
 </head>
 <body>
-    <form action="index.php?pg=login" method="post">
+    <form action="index.php?pg=dangnhap" method="post">
         <label for="username">Tên đăng nhập:</label>
-        <input type="text" id="username" name="user" required>
+        <input type="text" id="username" name="user" >
 
         <label for="password">Mật khẩu:</label>
-        <input type="password" id="password" name="pass" required>
+        <input type="password" id="password" name="pass" >
         <input type="submit" name="btnlogin" value="Đăng nhập">
         <!-- <button type="submit">Đăng Nhập</button> -->
         <button type="submit">Đăng kí</button>
