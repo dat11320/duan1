@@ -36,7 +36,7 @@
    }else{
       include "view/main.php";
    }
-   
+   // git add . chon file tai len
 
    include "view/footer.php";
    // echo "# duan1" >> README.md
