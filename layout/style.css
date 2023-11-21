@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -244,4 +245,33 @@ footer {
     /* From updateuser */
     
 
+
+.info-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.info-product button{
+    background-color: #fffbf5;
+
+    height: 100%;
+    margin: -2.5px;
+    padding: 10px 20px;
+    border: 0.5px solid gray;
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+.info-product button:hover{
+    background-color: #ba704f;
+    color: #fffbf5;
+    transition: ease-in-out 0.3s;
+    text-shadow: #000000cb   ;
+}
+.star{
+    margin-top: 10px;
+}
+.star i{
+    color: #ffcd4b;
+}
     

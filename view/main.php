@@ -1,24 +1,24 @@
 <div id="main-banner">
         <a href="#"><img src="image/anh1giamgia.webp" width="1475px" height="563px"></a>
-</div>
-<div id="main-gioithieu">
-    <div class="main-itemgioithieu">
-        <i class="fa-solid fa-cake-candles" style="color: #ffb029;"></i>
-        <b>Bộ sưu tập bánh</b>
-        <p>Các loại bánh bạn cần</p>
     </div>
-    <div class="main-itemgioithieu">
-        <i class="fa-solid fa-box" style="color: #ffb029;"></i>
-        <b>Miễn phí vận chuyển</b>
-        <p>Miễn phí theo đơn đặt hàng </p>
+    <div id="main-gioithieu">
+        <div class="main-itemgioithieu">
+            <i class="fa-solid fa-cake-candles" style="color: #ffb029;"></i>
+            <b>Bộ sưu tập bánh</b>
+            <p>Các loại bánh bạn cần</p>
+        </div>
+        <div class="main-itemgioithieu">
+            <i class="fa-solid fa-box" style="color: #ffb029;"></i>
+            <b>Miễn phí vận chuyển</b>
+            <p>Miễn phí theo đơn đặt hàng </p>
+        </div>
+        <div class="main-itemgioithieu">
+            <i class="fa-solid fa-arrows-rotate" style="color: #ffb029;"></i>
+            <b>Hoàn tiền 100%</b>
+            <p>Nếu bánh bị hư</p>
+        </div>
     </div>
-    <div class="main-itemgioithieu">
-        <i class="fa-solid fa-arrows-rotate" style="color: #ffb029;"></i>
-        <b>Hoàn tiền 100%</b>
-        <p>Nếu bánh bị hư</p>
-    </div>
-</div>
-<main id="main">        
+    <main id="main">        
         <div class="main-item">
             <div class="main-item2">
                 <img src="image/banh1.jpg" alt="">
@@ -77,37 +77,156 @@
                     <div class="box25 mr15">
                         <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
-                        <span class="price">$1000</span>
-                        <button>Đặt hàng</button>
+                        <h3 style="margin: 8px 0;">Bánh kem Socola</h3>
+                        <div class="info-product">
+                            <div>
+                                
+                                <div class="price">$1000</div>
+                                <div class="price">$1000</div>
+                                
+                            </div>
+                            <div>
+                                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        
                     </div>
                     <div class="box25 mr15">
                         <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
-                        <span class="price">$1000</span>
-                        <button>Đặt hàng</button>
+                        <h3 style="margin: 8px 0;">Bánh kem Socola</h3>
+                        <div class="info-product">
+                            <div>
+                                
+                                <div class="price">$1000</div>
+                                <div class="price">$1000</div>
+                                
+                            </div>
+                            <div>
+                                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="containerfull mr30">
                     <div class="box25 mr15">
+                        <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
-                        <span class="price">$1000</span>
-                        <button>Đặt hàng</button>
+                        <h3 style="margin: 8px 0;">Bánh kem Socola</h3>
+                        <div class="info-product">
+                            <div>
+                                
+                                <div class="price">$1000</div>
+                                <div class="price">$1000</div>
+                                
+                            </div>
+                            <div>
+                                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        
                     </div>
                     <div class="box25 mr15">
+                        <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
-                        <span class="price">$1000</span>
-                        <button>Đặt hàng</button>
+                        <h3 style="margin: 8px 0;">Bánh kem Socola</h3>
+                        <div class="info-product">
+                            <div>
+                                
+                                <div class="price">$1000</div>
+                                <div class="price">$1000</div>
+                                
+                            </div>
+                            <div>
+                                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        
                     </div>
                     <div class="box25 mr15">
+                        <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
-                        <span class="price">$1000</span>
-                        <button>Đặt hàng</button>
+                        <h3 style="margin: 8px 0;">Bánh kem Socola</h3>
+                        <div class="info-product">
+                            <div>
+                                
+                                <div class="price">$1000</div>
+                                <div class="price">$1000</div>
+                                
+                            </div>
+                            <div>
+                                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        
                     </div>
                     <div class="box25 mr15">
+                        <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
-                        <span class="price">$1000</span>
-                        <button>Đặt hàng</button>
+                        <h3 style="margin: 8px 0;">Bánh kem Socola</h3>
+                        <div class="info-product">
+                            <div>
+                                
+                                <div class="price">$1000</div>
+                                <div class="price">$1000</div>
+                                
+                            </div>
+                            <div>
+                                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        
                     </div>
+
                 </div>
     
             </div>
