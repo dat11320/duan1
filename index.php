@@ -36,6 +36,9 @@
          case 'lienhe':
             include "view/lienhe.php";
             break;
+         case 'chitietsanpham':
+            include "view/chitietsanpham.php";
+            break;
          default:
             include "view/main.php";
             break;
@@ -46,7 +49,7 @@
    // git add . chon file tai len
 // git commit -m "" de ghi mo ta
 // git push gui file len
-// tess lại
+// tess lại 
 // git pull vcxvxcvxcv
 /// sửa lại thử 
 
@@ -58,4 +61,5 @@
    // git branch -M main
    // git remote add origin https://github.com/dat11320/duan1.git
    // git push -u origin main
+   // sdfhkdhsjfk
 ?>
