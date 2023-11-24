@@ -1,8 +1,11 @@
 <?php
    session_start();
    include "model/pdo.php";
+   include "model/sanpham.php";
+   
    // include "model/user.php";
    include "view/header.php";
+   $dssp_new['new']=get_dssp_new();
    if(isset($_GET['pg'])){
       $pg=$_GET['pg'];
       switch ($pg) {

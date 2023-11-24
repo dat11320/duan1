@@ -1,36 +1,6 @@
-<?php
-    $html_dssp_new='';
-    foreach ($dssp_new['new'] as $sp) {
-        extract($sp);
-        $html_dssp_new.='<div class="box25 mr15">
-                            <div class="best"></div>
-                            <img style="height:200px; margin-top:30px;" src="layout/image/'.$img.'" alt="">
-                            <h3 style="margin: 8px 0;">'.$name.'</h3>
-                            <div class="info-product">
-                                <div>
-                                    
-                                    <div class="price">'.$price.'</div>
-                                    
-                                    
-                                </div>
-                                <div>
-                                    <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
-                                    <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            
-                        </div>';
-        
-    }
-    
-?>
+
+   
+
 
 <div id="main-banner">
         <a href="#"><img src="image/anh1giamgia.webp" width="1475px" height="563px"></a>
@@ -126,10 +96,33 @@
                         
                     </div>
                 </div>
-                    <?=$html_dssp_new?>
                     
                 <div class="containerfull mr30">
-                    
+                <?php foreach ($dssp_new['new'] as $sp): ?>
+        
+        <div class="box25 mr15">
+        <div class="best"></div>
+        <img style="height: 200px;" src="layout/image/<?=$sp['img']?>" alt="">
+        <h3 style="margin: 8px 0;"><?=$sp['name']?></h3>
+        <div class="info-product">
+            <div>
+                <div class="price"><?=$sp['price']?></div>
+            </div>
+            <div>
+                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+    </div>
+    
+    <?php endforeach; ?>
                     <div class="box25 mr15">
                         <div class="best"></div>
                         <img src="image/banh7.webp" alt="">

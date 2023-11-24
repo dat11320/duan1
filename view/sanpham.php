@@ -1,32 +1,32 @@
 <?php
     $html_dssp_new='';
-    foreach ($dssp_new['new'] as $sp) {
+    foreach ($dssp_new['new']as $sp) {
         extract($sp);
-        $html_dssp_new.='<div class="box25 mr15">
-                            <div class="best"></div>
-                            <img style="height:200px; margin-top:30px;" src="layout/image/'.$img.'" alt="">
-                            <h3 style="margin: 8px 0;">'.$name.'</h3>
-                            <div class="info-product">
-                                <div>
-                                    
-                                    <div class="price">'.$price.'</div>
-                                    
-                                    
-                                </div>
-                                <div>
-                                    <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
-                                    <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            
-                        </div>';
+        $html_dssp_new='<div class="box25 mr15">
+        <div class="best"></div>
+        <img src="image/'.$img.'" alt="">
+        <h3 style="margin: 8px 0;">'.$name.'</h3>
+        <div class="info-product">
+            <div>
+                
+                <div class="price">'.$price.'</div>
+                // <div class="price">$1000</div>
+                
+            </div>
+            <div>
+                <button style="border-radius: 20px 0 0 20px;">Đặt hàng</button>
+                <button style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        
+    </div>';
         
     }
     
@@ -126,10 +126,8 @@
                         
                     </div>
                 </div>
-                    <?=$html_dssp_new?>
-                    
-                <div class="containerfull mr30">
-                    
+                <?=$html_dssp_new;?>
+                <!-- <div class="containerfull mr30">
                     <div class="box25 mr15">
                         <div class="best"></div>
                         <img src="image/banh7.webp" alt="">
@@ -260,11 +258,11 @@
                         <p><a href="#">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE</a></p>
                         <p>Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
                     </div>
-                </div>
-                <!-- <div class="row">
-                    <h2>Bánh sừng trâu</h2>
                 </div> -->
                 <!-- <div class="row">
+                    <h2>Bánh sừng trâu</h2>
+                </div>
+                <div class="row">
                     <div class="boxnews mr2pt">
                         <img src="image/banh3.jpg" alt="">
                         <p>11/03/2022</p>
