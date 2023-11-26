@@ -63,7 +63,7 @@
                         <a href="index.php?pg=lienhe">Liên hệ</a>
                     </li>
                     <li>
-                        <a href="admin.php?pg=sanphamlist">Hệ thống cửa hàng</a>
+                        <a href="../../../duan1nhom5/duan1/admin/index.php">Hệ thống cửa hàng</a>
                     </li>
                 </ul>
             </div>

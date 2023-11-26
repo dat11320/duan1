@@ -241,25 +241,20 @@
                 <div class="row">
                     <h2>Bánh mì</h2>
                 </div>
-                <div class="row">
-                    <div class="boxnews mr2pt">
-                        <img src="image/banh3.jpg" alt="">
-                        <p>11/03/2022</p>
-                        <p><a href="#">CÁCH NHẬN BIẾT HƯƠNG VỊ CÀ PHÊ</a></p>
-                        <p>Cùng Arabica, Robusta cũng là loại cà phê nổi tiếng được sử dụng phổ biến ở Việt Nam và nhiều nước khác trên thế giới. Với nhiều đặc điểm riêng, không...</p>
+                <div class="container mt-3">
+                    <h2>Hình ảnh tiệm bánh</h2>
+                    <p></p>
+                    <div class="card img-fluid" style="width:550px;">
+                      <img class="card-img-top" src="../duan1/layout/image/nen1.jpg " alt="Card image" style="width:100%">
+                      <div class="card-img-overlay">
+                        <h4 class="card-title">Happy Strar</h4>
+                        <p class="card-text">Do sản phẩm này được xếp vào nhóm "ăn chơi" nên giá trị cảm quan được xem là quan trọng hàng đầu.</p>
+                        <p class="card-text">Bánh bông lan trứng muối là một trong những loại bánh ngon nhất ở Vũng Tàu. Món bánh này xuất hiện tại thành phố Vũng Tàu từ những thập niên 50-60 của thế kỉ trước. Bánh bông lan trứng muối mang hương vị và phong cách rất Tây, rất hấp dẫn. Hương vị tuyệt vời của nó đã tạo nên một sức lan tỏa mạnh mẽ.</p>
+                      <h3 class="card-text" style="-webkit-text-fill-color: rgb(26, 255, 0);">Vì vậy chúng tôi luôn đặt chất lượng sản phẩm lên hàng đầu khi đến với Happy Star!</h3>
+                    
                     </div>
-                    <div class="boxnews mr2pt">
-                        <img src="image/banh8.jpg" alt="">
-                        <p>11/03/2022</p>
-                        <p><a href="#">SIGNATURE - BIỂU TƯỢNG VĂN HOÁ CÀ PHÊ</a></p>
-                        <p>Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại.Một lời...</p>
                     </div>
-                    <div class="boxnews mr2pt">
-                        <img src="image/banh5.jpg" alt="">
-                        <p>11/03/2022</p>
-                        <p><a href="#">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE</a></p>
-                        <p>Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
-                    </div>
+                  </div>
                 </div>
                 <!-- <div class="row">
                     <h2>Bánh sừng trâu</h2>

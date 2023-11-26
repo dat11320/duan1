@@ -1,10 +1,11 @@
 <?php
     $html_dm='';
     foreach ($dsdm as $dm) {
-        extract($dm){
-            // $link='index.php?pg=sanpham&iddm='.$id;
-            // $html_dm.='';
-        }
+        extract($dm);
+            $link='index.php?pg=sanpham&iddm='.$id;
+            $html_dm.='<option value="'.$id.'">'.$name.'</option>';
+            
+        
     }
 ?>
 
@@ -12,7 +13,6 @@
                 <h3 class="title-page">
                     Thêm sản phẩm
                 </h3>
-                
                 <form class="addPro" action="index.php?pg=addproduct" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputFile">Ảnh sản phẩm</label>
@@ -28,7 +28,10 @@
                         <label for="categories">Danh mục:</label>
                         <select class="form-select" name="iddm" aria-label="Default select example">
                             <option selected>Chọn danh mục</option>
-                            <?$html_danhmuc_list?>
+                            <?$html_dm?>
+                            <option value="3">Bánh mì</option>
+                            <option value="3">Bánh ngọt</option>
+
                           </select>
                     </div>
                     <div class="form-group">

@@ -1,8 +1,8 @@
 <?php
     include "../model/pdo.php";
     include "../model/sanpham.php";
-    include "../model/global.php";
     include "../model/danhmuc.php";
+    include "../model/global.php";
 
     include "view/header.php";
     if (isset($_GET['pg'])) {
@@ -13,23 +13,36 @@
                 include "view/sanphamlist.php";
                 break;
             case 'sanphamadd':
-                $danhmuclist=danhmuc_all();
+                $dsdm=danhmuc_all();
                 include "view/sanphamadd.php";
                 break;
+            case 'delproduct':
+                if(isset($_GET['id'])&&($_GET['id'])>0)
+                    $id=$_GET['id'];
+                    sanpham_delete($id);
+                // trở về trang dssp
+                $dssp_new['new']=get_dssp_new();
+                include "view/sanphamlist.php";
+                break;
             case 'addproduct':
-                if($_POST['addproduct']){
+                if(isset($_POST['addproduct'])){
                     // lấy dử liệu về
                     $name=$_POST['name'];
                     $price=$_POST['price'];
                     $iddm=$_POST['iddm'];
-                    $img=$_POST['img'];
+                    $img=$_FILES['img']['name'];
 
                     // inert into
+                    sanpham_insert($name, $img, $price, $iddm);
+                    // upload hình ảnh
+                    $target_file=IMG_PATH_ADMIN.$img;
+                    move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
 
                     // trở về trang dssp
-                    $dssp_new['new']=get_dssp_new();
-                    include "sanphamlist.php";
+                    $dsdm['new']=get_dssp_new();
+                    include "view/sanphamlist.php";
                 }else{
+                    $dsdm=danhmuc_all();
                     include "view/sanphamadd.php";                    
                 }
                 break;

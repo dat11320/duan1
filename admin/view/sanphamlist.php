@@ -15,7 +15,7 @@
                             <a href="#" class="btn btn-warning"
                               ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
                             >
-                            <a href="#" class="btn btn-danger"
+                            <a href=""index.php?pg=delproduct&id='.$id.' class="btn btn-danger"
                               ><i class="fa-solid fa-trash"></i> Xóa</a
                             >
                           </td>

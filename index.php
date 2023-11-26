@@ -61,6 +61,9 @@
          case 'chitietsanpham':
             include "view/chitietsanpham.php";
             break;
+         case 'admin':
+            include "../admin/index.php";
+            break;
          default:
             include "view/main.php";
             break;
