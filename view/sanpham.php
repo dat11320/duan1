@@ -10,7 +10,7 @@
             <div>
                 
                 <div class="price">'.$price.'</div>
-                // <div class="price">$1000</div>
+                <del>200</del>
                 
             </div>
             <div>
@@ -30,6 +30,7 @@
         
     }
     
+ 
 ?>
 
 <div id="main-banner">

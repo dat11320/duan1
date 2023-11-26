@@ -1,3 +1,30 @@
+<?php
+  
+
+    $html_dssp_new='';
+    $i=1;
+    foreach ($dssp_new['new']as $sp) {
+        extract($sp);
+        $html_dssp_new.='<tr>
+                          <td>'.$i.'</td>
+                          <td><img src="'.IMG_PATH_ADMIN.$img.'" alt="'.$name.'" width="80px"></td>
+                          <td>'.$name.'</td>
+                          <td>'.$price.'</td>
+                          <td>'.$view.'</td>
+                          <td>
+                            <a href="#" class="btn btn-warning"
+                              ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
+                            >
+                            <a href="#" class="btn btn-danger"
+                              ><i class="fa-solid fa-trash"></i> Xóa</a
+                            >
+                          </td>
+                        </tr>';
+                      $i++;    
+    }
+
+?>
+
 <div class="main-content">
           <h3 class="title-page">Sản phẩm</h3>
           <div class="d-flex justify-content-end">
@@ -9,7 +36,7 @@
             <thead>
               <tr>
                 <th>STT</th>
-                <th><img src="hinh" alt="ten san pham" width="80px" /></th>
+                <th><img src="hinh" alt="Hình" width="80px" /></th>
                 <th>Tên sản phẩm</th>
                 <th>Giá</th>
                 <th>Lượt xem</th>
@@ -17,135 +44,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011-04-25</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011-07-25</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Serge Baldwin</td>
-                <td>Data Coordinator</td>
-                <td>Singapore</td>
-                <td>64</td>
-                <td>2012-04-09</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Zenaida Frank</td>
-                <td>Software Engineer</td>
-                <td>New York</td>
-                <td>63</td>
-                <td>2010-01-04</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Zorita Serrano</td>
-                <td>Software Engineer</td>
-                <td>San Francisco</td>
-                <td>56</td>
-                <td>2012-06-01</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Jennifer Acosta</td>
-                <td>Junior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>43</td>
-                <td>2013-02-01</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Cara Stevens</td>
-                <td>Sales Assistant</td>
-                <td>New York</td>
-                <td>46</td>
-                <td>2011-12-06</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Hermione Butler</td>
-                <td>Regional Director</td>
-                <td>London</td>
-                <td>47</td>
-                <td>2011-03-21</td>
-                <td>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa-solid fa-pen-to-square"></i> Sửa</a
-                  >
-                  <a href="#" class="btn btn-danger"
-                    ><i class="fa-solid fa-trash"></i> Xóa</a
-                  >
-                </td>
-              </tr>
+            
+              <?=$html_dssp_new?>
             </tbody>
             <tfoot>
-              <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+              
+            <tr>
+                <th>STT</th>
+                <th><img src="hinh" alt="Hình " width="80px" /></th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Lượt xem</th>
+                <th>Thao tác</th>
               </tr>
             </tfoot>
           </table>

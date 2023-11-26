@@ -1,5 +1,5 @@
 <?php
-// require_once 'pdo.php';
+// require_once 'model/pdo.php';
 
 // function user_insert($username, $password, $email){
 //     $sql = "INSERT INTO user(username, password, email) VALUES (?, ?, ?)";
@@ -10,11 +10,19 @@
 //     $sql = "UPDATE user SET username=?,password=?,email=?,diachi=?,dienthoai=?,role=? WHERE id=?";
 //     pdo_execute($sql,$username,$password,$email,$diachi,$dienthoai,$role,$id);    
 // }
+function user_insert($username, $password,$diachi, $dienthoai, $email){
+    $sql = "INSERT INTO user (username, password, diachi, dienthoai,email) VALUES (?, ?, ?, ?, ?)";
+    pdo_execute($sql, $username, $password,$diachi, $dienthoai, $email);
+}
 
 function checkuser($username,$password){
     $sql="select * from user where username=? and password=?";
     return pdo_query_one($sql,$username,$password);
     
+}
+function get_user($id){
+    $sql="Select * from user where id=?";
+    return pdo_query_one($sql, $id);
 }
 // function get_user($id){
 //     $sql="Select * from user where id=? ";

@@ -1,13 +1,23 @@
+<?php
+    $html_dm='';
+    foreach ($dsdm as $dm) {
+        extract($dm){
+            // $link='index.php?pg=sanpham&iddm='.$id;
+            // $html_dm.='';
+        }
+    }
+?>
+
 <div class="main-content">
                 <h3 class="title-page">
                     Thêm sản phẩm
                 </h3>
                 
-                <form class="addPro" action="" method="POST" enctype="multipart/form-data">
+                <form class="addPro" action="index.php?pg=addproduct" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputFile">Ảnh sản phẩm</label>
                         <div class="custom-file">
-                            <input type="file" name="image" class="custom-file-input" id="exampleInputFile">
+                            <input type="file" name="img" class="custom-file-input" id="exampleInputFile">
                         </div>
                     </div>
                     <div class="form-group">
@@ -16,11 +26,9 @@
                     </div>
                     <div class="form-group">
                         <label for="categories">Danh mục:</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" name="iddm" aria-label="Default select example">
                             <option selected>Chọn danh mục</option>
-                            <option value="1">Danh mục 1</option>
-                            <option value="2">Danh mục 2</option>
-                            <option value="3">Danh mục 3</option>
+                            <?$html_danhmuc_list?>
                           </select>
                     </div>
                     <div class="form-group">
@@ -53,7 +61,7 @@
                             placeholder="Nhập 1 đoạn mô tả ngắn về sản phẩm" style="height: 78px;"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" name="addproduct" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>

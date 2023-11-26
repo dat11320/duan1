@@ -46,15 +46,24 @@
     </style>
 </head>
 <body>
-    <form action="index.php?pg=dangnhap" method="post">
+    <form action="index.php?pg=adduser" method="post">
         <label for="username">Tên đăng nhập:</label>
-        <input type="text" id="username" name="user" >
+        <input type="text" id="username" name="username" >
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" >
+
+        <label for="dienthoai">Số điện thoại:</label>
+        <input type="text" id="dienthoai" name="dienthoai" >
+
+        <label for="diachi">Địa chỉ</label>
+        <input type="text" id="diachi" name="diachi" >
 
         <label for="password">Mật khẩu:</label>
-        <input type="password" id="password" name="pass" >
-        <input type="submit" name="btnlogin" value="Đăng nhập">
+        <input type="password" id="password" name="password" >
         
         
+        <button name="dangky" type="submit">Đăng kí</button>
     </form>
 </body>
 </html>

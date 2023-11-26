@@ -3,27 +3,28 @@
    include "model/pdo.php";
    include "model/sanpham.php";
    
-   // include "model/user.php";
+   include "model/user.php";
    include "view/header.php";
    $dssp_new['new']=get_dssp_new();
    if(isset($_GET['pg'])){
       $pg=$_GET['pg'];
       switch ($pg) {
          case 'dangxuat':
-            unset($_SESSION['user']);  // hủy bỏ biến session
+            unset($_SESSION['username']);  // hủy bỏ biến session
             header('location: index.php'); 
             break;
          case 'dangnhap':
             if((isset($_POST['btnlogin']))&&($_POST['btnlogin'])){
                // input?
-               $user=$_POST['user']; // name bên form
-               $pass=$_POST['pass'];
+               $user=$_POST['username']; // name bên form
+               $pass=$_POST['password'];
                // sử lí?
                $arruser=array($user,$pass);
-               $_SESSION['user']=$arruser;
+               $_SESSION['username']=$arruser;
                // trả về 
                header('location: index.php'); 
             }
+
             include "view/login.php";
             break;
          // case 'thoat':
@@ -31,10 +32,28 @@
          //       unset($_SESSION['user']);
          //       header('location: index.php');
          //    }
+         case 'adduser':
+            // Xác định gái trị input
+            if(isset($_POST["dangky"])){
+                $username=$_POST["username"];
+                $password=$_POST["password"];
+                $email=$_POST["email"];
+                $diachi=$_POST["diachi"];
+                $dienthoai=$_POST["dienthoai"];
+                
+                // sử lý
+                user_insert($username, $password, $email, $diachi, $dienthoai);
+            }
+            //out
+
+            include "view/login.php";
+            break;
+         case 'dangky':
+            include "view/dangky.php";
             break;
          
          case 'userupdate':
-            include "view/userupdate.php";
+            include "view/userupdate.php"; 
             break;
          case 'lienhe':
             include "view/lienhe.php";

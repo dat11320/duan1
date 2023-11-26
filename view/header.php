@@ -29,12 +29,13 @@
                 <ul>
                     <li>
                         <?php
-                            if (isset($_SESSION['user'])) {
-                                echo ' <a href="index.php?pg=userupdate"><i class="fa-solid fa-user"></i>'.$_SESSION['user'][0].'</a>';
+                            if (isset($_SESSION['username'])) {
+                                echo ' <a href="index.php?pg=userupdate"><i class="fa-solid fa-user"></i>'.$_SESSION['username'][0].'</a>';
                                 echo ' <a href="index.php?pg=dangxuat"></i>Đăng xuất</a>';
                                 
                             }else{
-                                echo ' <a href="index.php?pg=dangnhap"><i class="fa-solid fa-user"></i>Đăng nhâp / Đăng kí</a>';
+                                echo ' <a href="index.php?pg=dangnhap"><i class="fa-solid fa-user"></i>Đăng nhâp</a>
+                                <a href="index.php?pg=dangky">Đăng kí</a>';
                             }
                         ?>
                        
