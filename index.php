@@ -89,4 +89,5 @@
    // sdfhkdhsjfk
    // sdlfsdjkflsafj
    //thu
+   $d=60;
 ?>
